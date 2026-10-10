@@ -1,0 +1,16 @@
+name: Task
+description: A piece of work to do.
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What and why
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: How we will know it is finished.
+    validations:
+      required: true
