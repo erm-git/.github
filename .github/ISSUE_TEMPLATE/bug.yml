@@ -1,0 +1,15 @@
+name: Bug
+description: Something does not work as intended.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens, and what should happen
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      description: Steps, commands or logs. Never paste secrets.

@@ -1,0 +1,37 @@
+name: Finding
+description: Something discovered that may need attention. Open it even if not yet confirmed.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "Findings start with the `question` label (needs more information). Remove it once the evidence confirms the finding; if it is disproved, close as Not planned with `invalid`."
+  - type: input
+    id: system
+    attributes:
+      label: System or component
+      description: Host, service, repository or area this concerns.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What was found
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence so far
+      description: Commands, outputs, file paths, dates. Link reports instead of pasting large output. Never paste secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: needed
+    attributes:
+      label: Needed to confirm
+      description: What check or information would confirm or disprove it. Leave empty if already confirmed.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Optional. What could be done about it; nothing is changed until the owner decides.
