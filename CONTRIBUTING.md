@@ -24,6 +24,20 @@ choice open, the line says **(choice)**.
   - **Not planned**: will not be done, or the finding turned out to be wrong.
   - **Duplicate**: already tracked elsewhere; link the other issue.
 
+## Stating what is known
+
+Every statement in an issue, report or pull request is one of these **(choice; adopted from the
+operator's work standard, abacus-admin/docs-int)**:
+
+| Class | Meaning | How to treat it |
+| --- | --- | --- |
+| Verified state | Established now from the authoritative source | Give the evidence |
+| Documented convention | How things are meant to work | Not proof that a system conforms |
+| Proposal | A suggested change, not adopted | Label it as a proposal |
+| Unknown state | Not established by available evidence | Retrieve it if possible; otherwise ask the owner |
+
+Plausibility is not evidence. Unknown findings carry the `question` label until verified.
+
 ## Labels
 
 Use GitHub's default labels
