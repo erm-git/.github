@@ -17,6 +17,8 @@ choice open, the line says **(choice)**.
 - Use the issue forms offered when you click **New issue**.
   ([Issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository))
 - Comments add evidence, results or decisions, not progress chatter.
+- Never edit an issue's original title or body; add corrections and updates as comments so every change
+  stays visible in the timeline **(choice)**.
 - Close with a reason ([state reasons](https://docs.github.com/en/rest/issues/issues#update-an-issue)):
   - **Completed**: resolved.
   - **Not planned**: will not be done, or the finding turned out to be wrong.
@@ -63,5 +65,11 @@ Extra label: `security` for security-relevant issues **(choice)**.
 ## AI agents
 
 - Read the repository's `AGENTS.md` first; it says what is specific to that repository.
-- Discovery and read-only work are always fine. Changes go through a branch and a pull request.
+- **Read-only** means no edits or changes to any system (configs, services, files, data, settings,
+  repository content). It does include: commands that only query, writing reports and the scratch or
+  tool files needed to produce them, and opening, commenting on, labelling and closing issues **(choice)**.
+- Read-only work is always fine. Any change needs the owner's approval and goes through a branch and a
+  pull request.
+- When a check needs access the agent does not have (root, a login, an API key), say so with the exact
+  command or step for the owner, and keep it listed until it is done **(choice)**.
 - Say which agent and model did the work in the issue or pull request.
